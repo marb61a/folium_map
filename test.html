@@ -18,23 +18,23 @@
     <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
     
     <style>
-    html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        }
-
-    #map {
-        position:absolute;
-        top:0;
-        bottom:0;
-        right:0;
-        left:0;
-        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            }
+    
+        #map {
+            position:absolute;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            }
     </style>
     
-    <style> #map_2cce7db5789a48d4a1bdbba9fc9e4c89 {
+    <style> #map_3ca261a044124fdca45c332146825191 {
         position : relative;
         width : 100.0%;
         height: 100.0%;
@@ -42,25 +42,24 @@
         top: 0.0%;
         }
     </style>
-
 </head>
 <body>
-    <div class="folium-map" id="map_2cce7db5789a48d4a1bdbba9fc9e4c89" ></div>
+    <div class="folium-map" id="map_3ca261a044124fdca45c332146825191" ></div>
 </body>
 <script>
     var southWest = L.latLng(-90, -180);
     var northEast = L.latLng(90, 180);
     var bounds = L.latLngBounds(southWest, northEast);
 
-    var map_2cce7db5789a48d4a1bdbba9fc9e4c89 = L.map('map_2cce7db5789a48d4a1bdbba9fc9e4c89', {
+    var map_3ca261a044124fdca45c332146825191 = L.map('map_3ca261a044124fdca45c332146825191', {
                                    center:[45.372,-121.697],
                                    zoom: 10,
                                    maxBounds: bounds,
                                    layers: [],
                                    crs: L.CRS.EPSG3857
                                  });
-    
-    var tile_layer_59d05d46bd6b482cb0eb3d0a2e3ee08d = L.tileLayer(
+
+    var tile_layer_1b219eb5908943bea6b6d47e3b08faf2 = L.tileLayer(
         'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
         {
             maxZoom: 18,
@@ -68,6 +67,58 @@
             attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
             detectRetina: false
             }
-        ).addTo(map_2cce7db5789a48d4a1bdbba9fc9e4c89);
+        ).addTo(map_3ca261a044124fdca45c332146825191);
+
+    var marker_7277c4d5e5a740b4bf1491e4520583c8 = L.marker(
+        [45.3288,-121.6625],
+        {
+            icon: new L.Icon.Default()
+            }
+        )
+        .addTo(map_3ca261a044124fdca45c332146825191);
+
+        var icon_1fe2236824e04274aebdb4f5ff7e7143 = L.AwesomeMarkers.icon({
+            icon: 'info-sign',
+            iconColor: 'white',
+            markerColor: 'red',
+            prefix: 'glyphicon',
+            extraClasses: 'fa-rotate-0'
+            });
+        marker_7277c4d5e5a740b4bf1491e4520583c8.setIcon(icon_1fe2236824e04274aebdb4f5ff7e7143);
+
+    var popup_3e63e5182e3a4ecb94fb3e781afe9759 = L.popup({maxWidth: '300'});
+
+    
+        var html_d33f563a5c894ab78a26eb69b825160e = $('         <div id="html_d33f563a5c894ab78a26eb69b825160e"                 style="width: 100.0%; height: 100.0%;">                 Mt Hood Meadows</div>                 ')[0];
+        popup_3e63e5182e3a4ecb94fb3e781afe9759.setContent(html_d33f563a5c894ab78a26eb69b825160e);
+    
+
+    marker_7277c4d5e5a740b4bf1491e4520583c8.bindPopup(popup_3e63e5182e3a4ecb94fb3e781afe9759);
+
+    var marker_be3c6d66b0e04f0b91923dce58a69a15 = L.marker(
+        [45.3311,-121.7311],
+        {
+            icon: new L.Icon.Default()
+            }
+        )
+        .addTo(map_3ca261a044124fdca45c332146825191);
+
+        var icon_643f5c355da34ab983da8ed3bc39e91c = L.AwesomeMarkers.icon({
+            icon: 'info-sign',
+            iconColor: 'white',
+            markerColor: 'green',
+            prefix: 'glyphicon',
+            extraClasses: 'fa-rotate-0'
+            });
+        marker_be3c6d66b0e04f0b91923dce58a69a15.setIcon(icon_643f5c355da34ab983da8ed3bc39e91c);
+
+    var popup_aa420ea55e7048b6ac88046f9df03283 = L.popup({maxWidth: '300'});
+
+    
+        var html_68a5ea7ebe9d450480194de6c0ebd335 = $('         <div id="html_68a5ea7ebe9d450480194de6c0ebd335"                 style="width: 100.0%; height: 100.0%;">                 Timberlake Lodge</div>                 ')[0];
+        popup_aa420ea55e7048b6ac88046f9df03283.setContent(html_68a5ea7ebe9d450480194de6c0ebd335);
+    
+
+    marker_be3c6d66b0e04f0b91923dce58a69a15.bindPopup(popup_aa420ea55e7048b6ac88046f9df03283);
+
 </script>
-        
